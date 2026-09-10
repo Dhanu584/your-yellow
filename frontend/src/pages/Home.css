@@ -539,7 +539,12 @@ button {
 .background-paper {
   position: absolute;
   inset: 0;
-  background: var(--yellow);
+
+  background-image: url("../assets/image01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   z-index: 0;
 }
 
@@ -549,7 +554,7 @@ button {
    This is intentionally clean.
 */
 
-.yellow-poster {
+/* .yellow-poster {
 
   position:
     absolute;
@@ -581,7 +586,7 @@ button {
 
   z-index:
     1;
-}
+} */
 
 
 /*
@@ -590,7 +595,7 @@ button {
    without adding decorative objects.
 */
 
-.yellow-edge {
+/* .yellow-edge {
 
   position:
     absolute;
@@ -628,7 +633,7 @@ button {
 
   z-index:
     2;
-}
+} */
 
 
 /* ==================================================
