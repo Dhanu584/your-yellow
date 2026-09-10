@@ -1,0 +1,1997 @@
+/* =========================================
+   ABOUT.CSS
+   YOUR YELLOW
+   ========================================= */
+
+
+/* =========================================
+   FONTS
+   ========================================= */
+
+@import url(
+  "https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Mono:wght@400;500&family=Playball&display=swap"
+);
+
+
+/* =========================================
+   GLOBAL
+   ========================================= */
+
+.about-page {
+  --yellow: #F8DD24;
+  --deep-yellow: #F4D51C;
+  --pink: #C82F6A;
+  --light-pink: #F7C9D9;
+  --soft-pink: #FBE2EA;
+  --dark: #241A17;
+  --deep-dark: #1B1210;
+  --cream: #FFF9E8;
+  --soft-cream: #FFFDF5;
+  --warm-yellow: #F6E47A;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background: var(--yellow);
+
+  color: var(--dark);
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.about-navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 3rem;
+
+  background: rgba(255, 249, 232, 0.94);
+
+  backdrop-filter: blur(14px);
+
+  border-bottom:
+    1px solid
+    rgba(36, 26, 23, 0.12);
+
+  z-index: 1000;
+}
+
+
+/* =========================================
+   ABOUT SECTION TOP DECORATION
+   ========================================= */
+
+.about-intro-section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.about-top-decoration {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+
+  pointer-events: none;
+
+  z-index: 3;
+}
+
+
+.about-top-line {
+  position: absolute;
+
+  top: 25px;
+  left: 8%;
+  right: 8%;
+
+  height: 1px;
+
+  background: rgba(36, 26, 23, 0.18);
+}
+
+
+.about-top-dot {
+  position: absolute;
+
+  top: 21px;
+  left: 50%;
+
+  width: 8px;
+  height: 8px;
+
+  background: var(--pink);
+
+  border:
+    1px solid
+    rgba(36, 26, 23, 0.35);
+
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+.about-spark {
+  position: absolute;
+
+  color: var(--pink);
+
+  font-family: Georgia, serif;
+
+  line-height: 1;
+
+  background: var(--yellow);
+
+  padding: 0 7px;
+}
+
+
+.spark-left {
+  left: 18%;
+  top: 16px;
+
+  font-size: 13px;
+}
+
+
+.spark-mid {
+  left: 50%;
+  top: 15px;
+
+  font-size: 9px;
+
+  transform: translateX(-50%);
+}
+
+
+.spark-right {
+  right: 18%;
+  top: 16px;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   MENU
+   ========================================= */
+
+.about-menu {
+  width: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding: 10px 0;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+
+.about-menu span {
+  display: block;
+
+  width: 25px;
+  height: 1px;
+
+  background: var(--dark);
+}
+
+
+.about-menu span:last-child {
+  width: 15px;
+}
+
+
+/* =========================================
+   NAV LOGO
+   ========================================= */
+
+.about-nav-logo {
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-family:
+    "Playball",
+    cursive;
+
+  font-size: 1.55rem;
+
+  color: var(--dark);
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   JOIN BUTTON
+   ========================================= */
+
+.about-join {
+  border: none;
+
+  border-radius: 100px;
+
+  padding: 11px 21px;
+
+  background: var(--pink);
+
+  color: var(--cream);
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.65rem;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.about-join:hover {
+  transform: translateY(-2px);
+
+  background: var(--dark);
+}
+
+
+/* =========================================
+   COMMON
+   ========================================= */
+
+.about-eyebrow {
+  margin: 0 0 1.2rem;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.58rem;
+
+  letter-spacing: 0.3em;
+
+  color:
+    rgba(36, 26, 23, 0.72);
+}
+
+
+.about-reveal {
+  opacity: 0;
+
+  transform:
+    translateY(35px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+}
+
+
+.about-reveal.about-visible {
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+
+/* =========================================
+   SECTION 01
+   OUR STORY
+   ========================================= */
+
+.about-intro-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding:
+    145px
+    7vw
+    80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: var(--yellow);
+}
+
+
+/* =========================================
+   SECTION NUMBER
+   ========================================= */
+
+.about-section-number {
+  position: absolute;
+
+  top: 100px;
+  right: 6vw;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.52rem;
+
+  letter-spacing: 0.3em;
+
+  color: rgba(36, 26, 23, 0.65);
+
+  opacity: 0.75;
+}
+
+
+/* =========================================
+   HEART
+   ========================================= */
+
+.about-intro-decoration {
+  position: absolute;
+
+  left: 8%;
+  top: 18%;
+
+  font-size: 4rem;
+
+  color: var(--pink);
+
+  transform: rotate(-10deg);
+
+  animation:
+    aboutFloat
+    6s
+    ease-in-out
+    infinite;
+}
+
+
+/* =========================================
+   INTRO CONTENT
+   ========================================= */
+
+.about-intro-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1000px, 90vw);
+
+  text-align: center;
+}
+
+
+.about-intro-content h1 {
+  margin: 0;
+
+  font-family:
+    "Playball",
+    cursive;
+
+  font-weight: 400;
+
+  font-size:
+    clamp(
+      3.3rem,
+      6vw,
+      6.5rem
+    );
+
+  line-height: 0.98;
+
+  letter-spacing: -0.02em;
+
+  color: var(--dark);
+}
+
+
+.about-intro-content h1 em {
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 1.08em;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  color: var(--pink);
+}
+
+
+/* =========================================
+   INTRO DESCRIPTION
+   ========================================= */
+
+.about-intro-copy {
+  width: min(620px, 90%);
+
+  margin:
+    3.2rem
+    auto
+    0;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 3rem;
+
+  text-align: left;
+}
+
+
+.about-intro-copy p {
+  margin: 0;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.75rem;
+
+  line-height: 1.85;
+
+  color:
+    rgba(36, 26, 23, 0.78);
+}
+
+
+/* =========================================
+   STARS
+   ========================================= */
+
+.about-star {
+  position: absolute;
+
+  font-size: 2rem;
+
+  color: var(--pink);
+
+  animation:
+    aboutSparkle
+    4s
+    ease-in-out
+    infinite;
+}
+
+
+.star-one {
+  left: 15%;
+  top: 31%;
+}
+
+
+.star-two {
+  right: 15%;
+  top: 32%;
+}
+
+
+/* =========================================
+   SECTION 02
+   MAKE & CREATE
+   ========================================= */
+
+.make-things-section {
+  position: relative;
+
+  /*
+    Same compact height
+    as original THHGC version.
+  */
+
+  min-height: 76vh;
+
+  padding:
+    75px
+    7vw
+    65px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 4vw;
+
+  overflow: hidden;
+
+  background: var(--cream);
+}
+
+
+/* =========================================
+   SECTION 02 TEXT
+   ========================================= */
+
+.make-things-text {
+  width: 34%;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+.make-things-text h2 {
+  margin: 0;
+
+  font-family:
+    "Playball",
+    cursive;
+
+  font-weight: 400;
+
+  font-size:
+    clamp(
+      3.2rem,
+      5vw,
+      5.5rem
+    );
+
+  line-height: 0.94;
+
+  letter-spacing: -0.02em;
+
+  color: var(--dark);
+}
+
+
+.make-things-text h2 em {
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  color: var(--pink);
+}
+
+
+.make-description {
+  width: 280px;
+
+  margin-top: 1.7rem;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.72rem;
+
+  line-height: 1.8;
+
+  color:
+    rgba(36, 26, 23, 0.7);
+}
+
+
+/* =========================================
+   PHOTO DUMP
+   ========================================= */
+
+.photo-dump {
+  position: relative;
+
+  width: 62%;
+
+  height: 440px;
+}
+
+
+/* =========================================
+   PHOTOS
+   ========================================= */
+
+.dump-photo {
+  position: absolute;
+
+  padding: 7px;
+
+  background: var(--cream);
+
+  box-shadow:
+    0 15px 35px
+    rgba(36, 26, 23, 0.13);
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+
+.dump-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.dump-photo:hover {
+  z-index: 20;
+
+  box-shadow:
+    0 22px 45px
+    rgba(36, 26, 23, 0.2);
+}
+
+
+/* =========================================
+   DESKTOP PHOTO POSITIONS
+   ========================================= */
+
+.dump-one {
+  width: 180px;
+  height: 180px;
+
+  left: 2%;
+  top: 10%;
+
+  transform: rotate(-5deg);
+}
+
+
+.dump-two {
+  width: 165px;
+  height: 165px;
+
+  left: 28%;
+  top: 1%;
+
+  transform: rotate(4deg);
+}
+
+
+.dump-three {
+  width: 175px;
+  height: 175px;
+
+  left: 53%;
+  top: 11%;
+
+  transform: rotate(-4deg);
+}
+
+
+.dump-four {
+  width: 180px;
+  height: 180px;
+
+  left: 14%;
+  top: 43%;
+
+  transform: rotate(5deg);
+}
+
+
+.dump-five {
+  width: 175px;
+  height: 175px;
+
+  left: 40%;
+  top: 45%;
+
+  transform: rotate(-3deg);
+}
+
+
+.dump-six {
+  width: 170px;
+  height: 170px;
+
+  left: 66%;
+  top: 37%;
+
+  transform: rotate(5deg);
+}
+
+
+/* =========================================
+   PHOTO HOVERS
+   ========================================= */
+
+.dump-one:hover {
+  transform:
+    rotate(-5deg)
+    translateY(-10px)
+    scale(1.03);
+}
+
+
+.dump-two:hover {
+  transform:
+    rotate(4deg)
+    translateY(-10px)
+    scale(1.03);
+}
+
+
+.dump-three:hover {
+  transform:
+    rotate(-4deg)
+    translateY(-10px)
+    scale(1.03);
+}
+
+
+.dump-four:hover {
+  transform:
+    rotate(5deg)
+    translateY(-10px)
+    scale(1.03);
+}
+
+
+.dump-five:hover {
+  transform:
+    rotate(-3deg)
+    translateY(-10px)
+    scale(1.03);
+}
+
+
+.dump-six:hover {
+  transform:
+    rotate(5deg)
+    translateY(-10px)
+    scale(1.03);
+}
+
+
+/* =========================================
+   MEMORY WORD
+   ========================================= */
+
+.dump-word {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 1%;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 2.5rem;
+
+  color: var(--pink);
+
+  transform: rotate(-7deg);
+}
+
+
+/* =========================================
+   PHOTO DUMP SPARKS
+   ========================================= */
+
+.dump-spark {
+  position: absolute;
+
+  font-size: 1.7rem;
+
+  color: var(--pink);
+
+  animation:
+    aboutSparkle
+    4s
+    ease-in-out
+    infinite;
+}
+
+
+.spark-a {
+  left: 50%;
+
+  top: -3%;
+}
+
+
+.spark-b {
+  right: 5%;
+
+  top: 30%;
+
+  color: var(--deep-yellow);
+
+  animation-delay: 1.5s;
+}
+
+
+/* =========================================
+   SECTION 03
+   FOUNDER
+   ========================================= */
+
+.founder-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding:
+    105px
+    7vw
+    80px;
+
+  overflow: hidden;
+
+  background: var(--yellow);
+}
+
+
+/* =========================================
+   SCALLOPED TRANSITION
+   CREAM → YELLOW
+   ========================================= */
+
+.founder-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 48px;
+
+  background: var(--cream);
+
+  /*
+    Same soft scalloped transition
+    from original layout.
+  */
+
+  -webkit-mask-image:
+    radial-gradient(
+      30px 18px at 30px 100%,
+      transparent 97%,
+      #000 100%
+    );
+
+  mask-image:
+    radial-gradient(
+      30px 18px at 30px 100%,
+      transparent 97%,
+      #000 100%
+    );
+
+  -webkit-mask-size:
+    60px 48px;
+
+  mask-size:
+    60px 48px;
+
+  -webkit-mask-repeat:
+    repeat-x;
+
+  mask-repeat:
+    repeat-x;
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   FOUNDER TOP LINE
+   ========================================= */
+
+.founder-section::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 7%;
+  right: 7%;
+
+  height: 1px;
+
+  background:
+    rgba(36, 26, 23, 0.15);
+
+  z-index: 11;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   FOUNDER LABEL
+   ========================================= */
+
+.founder-section-label {
+  margin-bottom: 45px;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.55rem;
+
+  letter-spacing: 0.3em;
+
+  color:
+    rgba(36, 26, 23, 0.68);
+}
+
+
+/* =========================================
+   FOUNDER LAYOUT
+   ========================================= */
+
+.founder-layout {
+  width: min(1050px, 90vw);
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    48% 52%;
+
+  align-items: center;
+
+  gap: 5vw;
+}
+
+
+/* =========================================
+   FOUNDER IMAGE
+   ========================================= */
+
+.founder-photo-wrap {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.founder-photo-card {
+  position: relative;
+
+  width: min(420px, 100%);
+
+  aspect-ratio: 0.9;
+
+  padding: 12px;
+
+  background: var(--cream);
+
+  transform: rotate(-4deg);
+
+  box-shadow:
+    0 25px 45px
+    rgba(36, 26, 23, 0.14);
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.founder-photo-card:hover {
+  transform:
+    rotate(-1deg)
+    translateY(-8px);
+}
+
+
+.founder-photo-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   FOUNDER NOTE
+   ========================================= */
+
+.founder-note {
+  position: absolute;
+
+  right: -35px;
+
+  bottom: 18px;
+
+  padding: 13px 17px;
+
+  background: var(--pink);
+
+  color: var(--cream);
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 1.15rem;
+
+  line-height: 1;
+
+  transform: rotate(4deg);
+
+  box-shadow:
+    0 10px 20px
+    rgba(36, 26, 23, 0.12);
+}
+
+
+/* =========================================
+   FOUNDER STAR
+   ========================================= */
+
+.founder-star {
+  position: absolute;
+
+  left: 5%;
+
+  top: 0;
+
+  font-size: 2rem;
+
+  color: var(--pink);
+
+  z-index: 4;
+}
+
+
+/* =========================================
+   FOUNDER TEXT
+   ========================================= */
+
+.founder-content {
+  padding-top: 10px;
+}
+
+
+.founder-content h2 {
+  margin: 0;
+
+  font-family:
+    "Playball",
+    cursive;
+
+  font-weight: 400;
+
+  font-size:
+    clamp(
+      4rem,
+      6vw,
+      6.5rem
+    );
+
+  line-height: 0.82;
+
+  letter-spacing: -0.03em;
+
+  color: var(--dark);
+}
+
+
+.founder-content h2 em {
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 1.1em;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  color: var(--pink);
+}
+
+
+.founder-content h3 {
+  margin:
+    2.3rem
+    0
+    1.4rem;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 2rem;
+
+  font-weight: 400;
+
+  color: var(--pink);
+}
+
+
+.founder-description {
+  width: min(430px, 100%);
+
+  margin: 0;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.72rem;
+
+  line-height: 1.85;
+
+  color:
+    rgba(36, 26, 23, 0.78);
+}
+
+
+.founder-sign {
+  margin-top: 2rem;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 1.7rem;
+
+  color: var(--pink);
+
+  transform: rotate(-2deg);
+}
+
+
+/* =========================================
+   BOTTOM DECORATION
+   ========================================= */
+
+.about-bottom-decoration {
+  min-height: 130px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  background: var(--cream);
+
+  color: var(--dark);
+}
+
+
+.about-bottom-decoration span {
+  font-size: 1.3rem;
+}
+
+
+.about-bottom-decoration p {
+  margin: 0;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size: 0.5rem;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes aboutFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(-10deg);
+  }
+
+  50% {
+    transform:
+      translateY(-15px)
+      rotate(4deg);
+  }
+}
+
+
+@keyframes aboutSparkle {
+
+  0%,
+  100% {
+    opacity: 0.6;
+
+    transform:
+      scale(1)
+      rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+
+    transform:
+      scale(1.25)
+      rotate(15deg);
+  }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .about-navbar {
+    padding: 0 1.5rem;
+  }
+
+
+  .about-nav-logo {
+    font-size: 1.2rem;
+  }
+
+
+  .about-intro-content h1 {
+    font-size:
+      clamp(
+        2.8rem,
+        7vw,
+        5rem
+      );
+  }
+
+
+  .make-things-section {
+    min-height: 70vh;
+
+    gap: 3vw;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+
+  .make-things-text {
+    width: 38%;
+  }
+
+
+  .photo-dump {
+    width: 62%;
+
+    height: 400px;
+
+    transform:
+      scale(0.9);
+
+    transform-origin: center;
+  }
+
+
+  .founder-layout {
+    gap: 3vw;
+  }
+
+
+  .founder-content h2 {
+    font-size: 4.8rem;
+  }
+
+
+  .founder-section {
+    padding-top: 90px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  /* -----------------------------------------
+     NAVBAR
+     ----------------------------------------- */
+
+  .about-navbar {
+    height: 60px;
+
+    padding: 0 1rem;
+  }
+
+
+  .about-nav-logo {
+    font-size: 0.95rem;
+  }
+
+
+  .about-join {
+    padding: 9px 13px;
+
+    font-size: 0.52rem;
+  }
+
+
+  .about-menu {
+    width: 28px;
+  }
+
+
+  .about-menu span {
+    width: 20px;
+  }
+
+
+  /* -----------------------------------------
+     TOP ABOUT DECORATION
+     ----------------------------------------- */
+
+  .about-top-decoration {
+    height: 55px;
+  }
+
+
+  .about-top-line {
+    top: 20px;
+
+    left: 5%;
+    right: 5%;
+  }
+
+
+  .about-top-dot {
+    top: 16px;
+
+    width: 7px;
+    height: 7px;
+  }
+
+
+  .about-spark {
+    padding: 0 4px;
+  }
+
+
+  .spark-left {
+    left: 12%;
+
+    top: 12px;
+
+    font-size: 10px;
+  }
+
+
+  .spark-mid {
+    top: 12px;
+
+    font-size: 7px;
+  }
+
+
+  .spark-right {
+    right: 12%;
+
+    top: 12px;
+
+    font-size: 10px;
+  }
+
+
+  /* -----------------------------------------
+     SECTION 01
+     ----------------------------------------- */
+
+  .about-intro-section {
+    min-height: auto;
+
+    padding:
+      110px
+      1.3rem
+      70px;
+  }
+
+
+  .about-section-number {
+    top: 82px;
+
+    left: 1.3rem;
+    right: auto;
+
+    font-size: 0.45rem;
+  }
+
+
+  .about-intro-decoration {
+    left: 7%;
+
+    top: 16%;
+
+    font-size: 2.6rem;
+  }
+
+
+  .about-intro-content {
+    width: 100%;
+  }
+
+
+  .about-eyebrow {
+    font-size: 0.48rem;
+
+    letter-spacing: 0.22em;
+
+    margin-bottom: 0.9rem;
+  }
+
+
+  .about-intro-content h1 {
+    font-size: 2.65rem;
+
+    line-height: 1;
+
+    letter-spacing: -0.02em;
+  }
+
+
+  .about-intro-copy {
+    width: 100%;
+
+    margin-top: 2rem;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.2rem;
+
+    text-align: center;
+  }
+
+
+  .about-intro-copy p {
+    font-size: 0.65rem;
+
+    line-height: 1.7;
+  }
+
+
+  .about-star {
+    font-size: 1.2rem;
+  }
+
+
+  .star-one {
+    left: 15%;
+
+    top: 31%;
+  }
+
+
+  .star-two {
+    right: 15%;
+
+    top: 32%;
+  }
+
+
+  /* -----------------------------------------
+     SECTION 02
+     COMPACT MOBILE VERSION
+     ----------------------------------------- */
+
+  .make-things-section {
+    min-height: auto;
+
+    padding:
+      55px
+      1.2rem
+      45px;
+
+    display: block;
+  }
+
+
+  .make-things-text {
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+  .make-things-text h2 {
+    font-size: 3rem;
+
+    line-height: 0.9;
+  }
+
+
+  .make-description {
+    width: 90%;
+
+    margin:
+      1.2rem
+      auto
+      0;
+
+    font-size: 0.62rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* -----------------------------------------
+     PHOTO COLLAGE
+     ----------------------------------------- */
+
+  .photo-dump {
+    width: 100%;
+
+    height: 355px;
+
+    margin-top: 15px;
+
+    transform: none;
+  }
+
+
+  .dump-photo {
+    padding: 5px;
+
+    box-shadow:
+      0 10px 22px
+      rgba(36, 26, 23, 0.14);
+  }
+
+
+  .dump-one {
+    width: 120px;
+    height: 120px;
+
+    left: 4%;
+    top: 7%;
+
+    transform: rotate(-6deg);
+  }
+
+
+  .dump-two {
+    width: 115px;
+    height: 115px;
+
+    left: 31%;
+    top: 1%;
+
+    transform: rotate(5deg);
+  }
+
+
+  .dump-three {
+    width: 120px;
+    height: 120px;
+
+    left: 60%;
+    top: 7%;
+
+    transform: rotate(-4deg);
+  }
+
+
+  .dump-four {
+    width: 120px;
+    height: 120px;
+
+    left: 16%;
+    top: 38%;
+
+    transform: rotate(5deg);
+  }
+
+
+  .dump-five {
+    width: 120px;
+    height: 120px;
+
+    left: 43%;
+    top: 41%;
+
+    transform: rotate(-4deg);
+  }
+
+
+  .dump-six {
+    width: 115px;
+    height: 115px;
+
+    left: 70%;
+    top: 34%;
+
+    transform: rotate(5deg);
+  }
+
+
+  .dump-word {
+    right: 4%;
+
+    bottom: 2%;
+
+    font-size: 1.9rem;
+  }
+
+
+  .dump-spark {
+    font-size: 1.1rem;
+  }
+
+
+  /* -----------------------------------------
+     SECTION 03
+     FOUNDER
+     ----------------------------------------- */
+
+  .founder-section {
+
+    min-height: auto;
+
+    padding:
+      78px
+      1rem
+      60px;
+  }
+
+
+  /* MOBILE WAVE */
+
+  .founder-section::before {
+    height: 32px;
+
+    background: var(--cream);
+
+    -webkit-mask-image:
+      radial-gradient(
+        23px 14px at 23px 100%,
+        transparent 97%,
+        #000 100%
+      );
+
+    mask-image:
+      radial-gradient(
+        23px 14px at 23px 100%,
+        transparent 97%,
+        #000 100%
+      );
+
+    -webkit-mask-size:
+      46px 32px;
+
+    mask-size:
+      46px 32px;
+
+    -webkit-mask-repeat:
+      repeat-x;
+
+    mask-repeat:
+      repeat-x;
+  }
+
+
+  .founder-section::after {
+    left: 5%;
+    right: 5%;
+  }
+
+
+  .founder-section-label {
+    margin-bottom: 25px;
+
+    font-size: 0.43rem;
+
+    letter-spacing: 0.22em;
+
+    white-space: nowrap;
+  }
+
+
+  /* -----------------------------------------
+     FOUNDER LAYOUT
+     ----------------------------------------- */
+
+  .founder-layout {
+
+    /*
+      Image stays LEFT.
+      Text stays RIGHT.
+    */
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+      43% 57%;
+
+    align-items: center;
+
+    gap: 0.7rem;
+  }
+
+
+  /* IMAGE */
+
+  .founder-photo-wrap {
+    width: 100%;
+  }
+
+
+  .founder-photo-card {
+    width: 100%;
+
+    padding: 6px;
+
+    transform: rotate(-4deg);
+
+    box-shadow:
+      0 14px 25px
+      rgba(36, 26, 23, 0.14);
+  }
+
+
+  .founder-note {
+    right: 4px;
+
+    bottom: 8px;
+
+    padding: 7px 9px;
+
+    font-size: 0.72rem;
+
+    z-index: 5;
+  }
+
+
+  .founder-star {
+    left: -3px;
+
+    top: -10px;
+
+    font-size: 1rem;
+  }
+
+
+  /* TEXT */
+
+  .founder-content {
+    padding-left: 4px;
+  }
+
+
+  .founder-content .about-eyebrow {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.42rem;
+  }
+
+
+  .founder-content h2 {
+    font-size: 2.55rem;
+
+    line-height: 0.8;
+  }
+
+
+  .founder-content h3 {
+    margin:
+      1rem
+      0
+      0.8rem;
+
+    font-size: 1.2rem;
+
+    line-height: 1;
+  }
+
+
+  .founder-description {
+    font-size: 0.58rem;
+
+    line-height: 1.6;
+  }
+
+
+  .founder-sign {
+    margin-top: 0.9rem;
+
+    font-size: 1rem;
+  }
+
+
+  /* -----------------------------------------
+     BOTTOM
+     ----------------------------------------- */
+
+  .about-bottom-decoration {
+    min-height: 90px;
+
+    gap: 13px;
+  }
+
+
+  .about-bottom-decoration p {
+    font-size: 0.4rem;
+
+    letter-spacing: 0.13em;
+
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media (max-width: 390px) {
+
+  .founder-note {
+    right: 3px;
+    bottom: 6px;
+  }
+
+
+  .about-nav-logo {
+    font-size: 0.82rem;
+  }
+
+
+  .about-join {
+    padding: 8px 11px;
+
+    font-size: 0.48rem;
+  }
+
+
+  /* INTRO */
+
+  .about-intro-content h1 {
+    font-size: 2.35rem;
+  }
+
+
+  /* PHOTO DUMP */
+
+  .photo-dump {
+    height: 325px;
+  }
+
+
+  .dump-one {
+    width: 105px;
+    height: 105px;
+
+    left: 3%;
+  }
+
+
+  .dump-two {
+    width: 100px;
+    height: 100px;
+
+    left: 31%;
+  }
+
+
+  .dump-three {
+    width: 105px;
+    height: 105px;
+
+    left: 61%;
+  }
+
+
+  .dump-four {
+    width: 105px;
+    height: 105px;
+
+    left: 13%;
+  }
+
+
+  .dump-five {
+    width: 105px;
+    height: 105px;
+
+    left: 43%;
+  }
+
+
+  .dump-six {
+    width: 100px;
+    height: 100px;
+
+    left: 70%;
+  }
+
+
+  /* FOUNDER */
+
+  .founder-layout {
+    grid-template-columns:
+      42% 58%;
+
+    gap: 0.4rem;
+  }
+
+
+  .founder-content h2 {
+    font-size: 2.25rem;
+  }
+
+
+  .founder-content h3 {
+    font-size: 1.05rem;
+  }
+
+
+  .founder-description {
+    font-size: 0.54rem;
+  }
+
+
+  .founder-sign {
+    font-size: 0.9rem;
+  }
+
+}

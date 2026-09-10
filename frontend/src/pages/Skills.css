@@ -1,0 +1,2456 @@
+/* =========================================
+   THE HOBBY HOARDERS GIRLS CLUB
+   OUR HOBBIES — JOURNAL
+========================================= */
+
+@import url(
+  "https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Mono:wght@400;500&family=Playball&display=swap"
+);
+
+
+/* =========================================
+   BASE
+========================================= */
+
+.skills-page {
+  --pink: #C82F6A;
+  --soft-pink: #F7C9D9;
+
+  --cream: #FFF9E8;
+  --paper: #FFFDF5;
+
+  --wine: #241A17;
+  --deep-wine: #1B1210;
+
+  --yellow: #FFF0A3;
+  --green: #F3E58A;
+
+  position: relative;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  background: var(--cream);
+
+  color: var(--wine);
+}
+
+
+/* =========================================
+   BACKGROUND WORD
+========================================= */
+
+.skills-bg-word {
+  position: absolute;
+
+  top: 100px;
+
+  right: -45px;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size: 13rem;
+
+  line-height: 0.7;
+
+  color:
+    rgba(255, 248, 242, 0.13);
+
+  pointer-events: none;
+
+  user-select: none;
+
+  transform:
+    rotate(-8deg);
+}
+
+
+/* =========================================
+   DOODLES
+========================================= */
+
+.skills-doodle {
+  position: absolute;
+
+  z-index: 1;
+
+  color:
+    rgba(36, 26, 23, 0.45);
+
+  pointer-events: none;
+
+  animation:
+    doodleFloat
+    5s
+    ease-in-out
+    infinite;
+}
+
+
+.doodle-one {
+  top: 13%;
+
+  left: 8%;
+
+  font-size: 1.8rem;
+}
+
+
+.doodle-two {
+  top: 20%;
+
+  right: 11%;
+
+  font-size: 2rem;
+
+  animation-delay: 1s;
+}
+
+
+.doodle-three {
+  top: 34%;
+
+  left: 4%;
+
+  font-size: 1.5rem;
+
+  animation-delay: 1.7s;
+}
+
+
+.doodle-four {
+  top: 37%;
+
+  right: 5%;
+
+  font-size: 1.7rem;
+
+  animation-delay: 2.5s;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.skills-intro {
+  position: relative;
+
+  z-index: 4;
+
+  /* FULL WIDTH */
+  width: 100%;
+
+  margin: 0;
+
+  /* REDUCED HEIGHT */
+  padding:
+    72px
+    20px
+    38px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: var(--pink);
+
+  border-top:
+    1px solid
+    rgba(36, 26, 23, 0.12);
+
+  border-bottom:
+    1px solid
+    rgba(36, 26, 23, 0.12);
+}
+
+
+/* =========================================
+   TOP DECORATIVE BORDER
+========================================= */
+
+.skills-intro::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 9px;
+
+  background:
+    repeating-linear-gradient(
+      135deg,
+      var(--cream) 0,
+      var(--cream) 2px,
+      transparent 2px,
+      transparent 12px
+    );
+
+  opacity: 0.9;
+
+  pointer-events: none;
+
+  z-index: 10;
+}
+
+
+/* =========================================
+   BOTTOM DECORATIVE BORDER
+========================================= */
+
+.skills-intro::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 9px;
+
+  background:
+    repeating-linear-gradient(
+      135deg,
+      var(--cream) 0,
+      var(--cream) 2px,
+      transparent 2px,
+      transparent 12px
+    );
+
+  opacity: 0.9;
+
+  pointer-events: none;
+
+  z-index: 10;
+}
+
+
+/* =========================================
+   INTRO CONTENT
+========================================= */
+
+.skills-eyebrow {
+  margin:
+    0
+    0
+    0.75rem;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.57rem;
+
+  letter-spacing:
+    0.3em;
+
+  color:
+    rgba(36, 26, 23, 0.72);
+}
+
+
+.skills-intro h1 {
+  width:
+    min(850px, 92vw);
+
+  margin:
+    0
+    auto;
+
+  font-family:
+    "Playball",
+    serif;
+
+  font-weight:
+    400;
+
+  font-size:
+    clamp(
+      3.2rem,
+      5.5vw,
+      5.8rem
+    );
+
+  line-height:
+    0.9;
+
+  letter-spacing:
+    -0.045em;
+
+  color:
+    var(--deep-wine);
+}
+
+
+.skills-intro h1 em {
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1.12em;
+
+  font-weight:
+    400;
+
+  color:
+    var(--cream);
+}
+
+
+.skills-intro-text {
+  width:
+    min(500px, 90vw);
+
+  margin:
+    1.1rem
+    auto
+    0;
+
+  font-family:
+    "Playball",
+    serif;
+
+  font-size:
+    0.82rem;
+
+  line-height:
+    1.45;
+
+  color:
+    rgba(36, 26, 23, 0.72);
+}
+
+/* =========================================
+   JOURNAL AREA
+========================================= */
+
+.journal-area {
+  position: relative;
+
+  z-index: 5;
+
+  width:
+    min(1180px, 94vw);
+
+  margin:
+    0 auto;
+
+  padding:
+    15px
+    0
+    35px;
+}
+
+
+/* =========================================
+   BOOK
+========================================= */
+
+.hobby-book {
+  position: relative;
+
+  width:
+    min(950px, 86vw);
+
+  height: 540px;
+
+  margin:
+    0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  perspective:
+    2200px;
+
+  transform-style:
+    preserve-3d;
+
+  filter:
+    drop-shadow(
+      0 25px 35px
+      rgba(36, 26, 23, 0.15)
+    );
+}
+
+
+/* =========================================
+   BOOK SHADOW
+========================================= */
+
+.book-shadow {
+  position: absolute;
+
+  left: 4%;
+  right: 4%;
+
+  bottom: -25px;
+
+  height: 35px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(36, 26, 23, 0.16);
+
+  filter:
+    blur(15px);
+
+  z-index: -5;
+}
+
+
+/* =========================================
+   COMMON PAGE
+========================================= */
+
+.journal-left,
+.journal-right {
+  position: relative;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT PAGE
+========================================= */
+
+.journal-left {
+  background:
+    linear-gradient(
+      90deg,
+      #FFF3C4,
+      var(--paper)
+    );
+
+  border-radius:
+    5px 0 0 5px;
+
+  box-shadow:
+    inset
+    -18px 0 28px
+    rgba(36, 26, 23, 0.07);
+
+  border-left:
+    1px solid
+    rgba(36, 26, 23, 0.1);
+}
+
+
+/* =========================================
+   RIGHT PAGE
+========================================= */
+
+.journal-right {
+  background:
+    var(--paper);
+
+  border-radius:
+    0 5px 5px 0;
+
+  box-shadow:
+    inset
+    15px 0 25px
+    rgba(36, 26, 23, 0.05);
+
+  border-right:
+    1px solid
+    rgba(36, 26, 23, 0.1);
+}
+
+
+.page-pink {
+  background:
+    #FFF9E8;
+}
+
+
+.page-yellow {
+  background:
+    #FFF4B8;
+}
+
+
+.page-cream {
+  background:
+    #FFFDF5;
+}
+
+
+.page-green {
+  background:
+    #F3E58A;
+}
+
+
+.page-rose {
+  background:
+    #FBE0EA;
+}
+
+
+/* =========================================
+   PAPER HOLES
+========================================= */
+
+.paper-holes {
+  position: absolute;
+
+  left: 14px;
+  top: 25px;
+  bottom: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+
+.paper-holes span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background:
+    #E8D88A;
+
+  box-shadow:
+    inset
+    1px 1px 2px
+    rgba(36, 26, 23, 0.14);
+}
+
+
+/* =========================================
+   LEFT INNER
+========================================= */
+
+.left-page-inner {
+  position: relative;
+
+  height: 100%;
+
+  padding:
+    45px
+    55px
+    35px;
+}
+
+
+.journal-date {
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.48rem;
+
+  letter-spacing:
+    0.25em;
+
+  color:
+    rgba(36, 26, 23, 0.5);
+}
+
+
+.left-number {
+  position: absolute;
+
+  top: 35px;
+  right: 45px;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    3.4rem;
+
+  color:
+    rgba(36, 26, 23, 0.12);
+}
+
+
+.left-small {
+  margin:
+    55px
+    0
+    1rem;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.52rem;
+
+  letter-spacing:
+    0.12em;
+
+  text-transform:
+    uppercase;
+
+  color:
+    rgba(36, 26, 23, 0.6);
+}
+
+
+.left-page-inner h2 {
+  margin: 0;
+
+  font-family:
+    "Playball",
+    serif;
+
+  font-size:
+    clamp(
+      2.1rem,
+      3.3vw,
+      3.3rem
+    );
+
+  line-height:
+    0.98;
+
+  font-weight:
+    400;
+
+  letter-spacing:
+    -0.035em;
+
+  color:
+    var(--deep-wine);
+}
+
+
+.left-page-inner h2 em {
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1.1em;
+
+  color:
+    var(--pink);
+
+  font-weight:
+    400;
+}
+
+
+/* =========================================
+   HAND LINE
+========================================= */
+
+.hand-line {
+  width: 75%;
+
+  height: 1px;
+
+  margin:
+    2rem
+    0
+    1.4rem;
+
+  background:
+    rgba(36, 26, 23, 0.2);
+}
+
+
+.left-note {
+  margin: 0;
+
+  max-width: 280px;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1.35rem;
+
+  line-height:
+    1.2;
+
+  color:
+    rgba(36, 26, 23, 0.68);
+
+  transform:
+    rotate(-3deg);
+}
+
+
+/* =========================================
+   MINI ENTRY
+========================================= */
+
+.left-mini-entry {
+  position: absolute;
+
+  left: 55px;
+  bottom: 85px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.43rem;
+
+  letter-spacing:
+    0.1em;
+
+  color:
+    rgba(36, 26, 23, 0.5);
+}
+
+
+.entry-line {
+  display: block;
+
+  width: 35px;
+
+  height: 1px;
+
+  background:
+    rgba(36, 26, 23, 0.25);
+}
+
+
+.entry-heart {
+  font-size:
+    0.8rem;
+
+  color:
+    var(--pink);
+}
+
+
+/* =========================================
+   LEFT BOTTOM
+========================================= */
+
+.left-bottom {
+  position: absolute;
+
+  left: 55px;
+  right: 45px;
+  bottom: 30px;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.43rem;
+
+  letter-spacing:
+    0.16em;
+
+  color:
+    rgba(36, 26, 23, 0.55);
+}
+
+
+/* =========================================
+   RIGHT INNER
+========================================= */
+
+.right-page-inner {
+  position: relative;
+
+  height: 100%;
+
+  padding:
+    27px
+    38px
+    25px;
+}
+
+
+.page-top {
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    center;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.46rem;
+
+  letter-spacing:
+    0.16em;
+
+  color:
+    rgba(36, 26, 23, 0.55);
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.hobby-photo-wrap {
+  position: absolute;
+
+  left: 38px;
+  top: 85px;
+
+  width: 45%;
+
+  height: 245px;
+
+  padding: 7px;
+
+  background:
+    white;
+
+  transform:
+    rotate(-2.5deg);
+
+  box-shadow:
+    0 12px 25px
+    rgba(36, 26, 23, 0.12);
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.hobby-photo-wrap:hover {
+  transform:
+    rotate(0deg)
+    translateY(-4px);
+}
+
+
+.hobby-photo-wrap img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   TAPE
+========================================= */
+
+.photo-tape {
+  position: absolute;
+
+  top: -15px;
+  left: 50%;
+
+  width: 70px;
+  height: 27px;
+
+  transform:
+    translateX(-50%)
+    rotate(2deg);
+
+  background:
+    rgba(200, 47, 106, 0.65);
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   PHOTO CAPTION
+========================================= */
+
+.photo-caption {
+  position: absolute;
+
+  bottom: -27px;
+  right: -12px;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1.2rem;
+
+  color:
+    var(--pink);
+
+  transform:
+    rotate(-5deg);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.hobby-content {
+  position: absolute;
+
+  top: 95px;
+  right: 32px;
+
+  width: 43%;
+
+  padding-left: 10px;
+}
+
+
+.hobby-subtitle {
+  margin:
+    0
+    0
+    0.45rem;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.44rem;
+
+  letter-spacing:
+    0.13em;
+
+  color:
+    rgba(36, 26, 23, 0.58);
+}
+
+
+.hobby-content h2 {
+  margin: 0;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    clamp(
+      2.5rem,
+      4vw,
+      4rem
+    );
+
+  font-weight:
+    400;
+
+  line-height:
+    0.9;
+
+  color:
+    var(--deep-wine);
+}
+
+
+.hobby-description {
+  margin:
+    1rem
+    0
+    0;
+
+  font-family:
+    "Playball",
+    serif;
+
+  font-size:
+    0.7rem;
+
+  line-height:
+    1.65;
+
+  color:
+    rgba(36, 26, 23, 0.72);
+}
+
+
+/* =========================================
+   HANDWRITTEN NOTE
+========================================= */
+
+.hobby-note {
+  display: flex;
+
+  gap: 6px;
+
+  align-items:
+    flex-start;
+
+  margin-top:
+    1rem;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1rem;
+
+  line-height:
+    1.1;
+
+  color:
+    rgba(36, 26, 23, 0.72);
+
+  transform:
+    rotate(-2deg);
+}
+
+
+.note-arrow {
+  font-family:
+    "Playball",
+    serif;
+
+  font-size:
+    1rem;
+}
+
+
+/* =========================================
+   PAGE CORNER
+========================================= */
+
+.page-corner {
+  position: absolute;
+
+  right: 25px;
+  bottom: 18px;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.45rem;
+
+  color:
+    rgba(36, 26, 23, 0.45);
+}
+
+
+/* =========================================
+   FLIP STRUCTURE
+========================================= */
+
+.static-left,
+.static-right,
+.under-left,
+.under-right {
+  position: absolute;
+
+  inset: 0;
+
+  width: 50%;
+
+  height: 100%;
+}
+
+
+/* Current left */
+.static-left {
+  left: 0;
+
+  z-index: 5;
+}
+
+
+/* Current right */
+.static-right {
+  left: 50%;
+
+  z-index: 5;
+}
+
+
+/* Next right underneath */
+.under-right {
+  left: 50%;
+
+  z-index: 2;
+}
+
+
+/* Previous left underneath */
+.under-left {
+  left: 0;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   TURNING SHEET
+========================================= */
+
+.turning-sheet {
+  position: absolute;
+
+  top: 0;
+
+  width: 50%;
+
+  height: 100%;
+
+  transform-style:
+    preserve-3d;
+
+  z-index: 20;
+
+  backface-visibility:
+    hidden;
+}
+
+
+/* -----------------------------------------
+   NEXT
+----------------------------------------- */
+
+.turning-next {
+  left: 50%;
+
+  transform-origin:
+    left center;
+
+  animation:
+    turnNext
+    0.76s
+    cubic-bezier(
+      0.25,
+      0.1,
+      0.25,
+      1
+    )
+    forwards;
+}
+
+
+/* -----------------------------------------
+   PREVIOUS
+----------------------------------------- */
+
+.turning-previous {
+  left: 0;
+
+  transform-origin:
+    right center;
+
+  animation:
+    turnPrevious
+    0.76s
+    cubic-bezier(
+      0.25,
+      0.1,
+      0.25,
+      1
+    )
+    forwards;
+}
+
+
+/* =========================================
+   TURNING SIDES
+========================================= */
+
+.turn-front,
+.turn-back {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  backface-visibility:
+    hidden;
+
+  transform-style:
+    preserve-3d;
+}
+
+
+.turn-front > .journal-left,
+.turn-front > .journal-right,
+.turn-back > .journal-left,
+.turn-back > .journal-right {
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 0;
+}
+
+
+/* =========================================
+   NEXT PAGE BACK
+========================================= */
+
+.turning-next .turn-back {
+  transform:
+    rotateY(180deg);
+}
+
+
+/* =========================================
+   PREVIOUS PAGE BACK
+========================================= */
+
+.turning-previous .turn-back {
+  transform:
+    rotateY(-180deg);
+}
+
+
+/* =========================================
+   FLIP ANIMATIONS
+========================================= */
+
+@keyframes turnNext {
+
+  0% {
+    transform:
+      rotateY(0deg);
+
+    box-shadow:
+      0 0 0
+      rgba(36, 26, 23, 0);
+  }
+
+  45% {
+    box-shadow:
+      -25px
+      0
+      35px
+      rgba(36, 26, 23, 0.18);
+  }
+
+  100% {
+    transform:
+      rotateY(-180deg);
+
+    box-shadow:
+      0 0 0
+      rgba(36, 26, 23, 0);
+  }
+}
+
+
+@keyframes turnPrevious {
+
+  0% {
+    transform:
+      rotateY(0deg);
+
+    box-shadow:
+      0 0 0
+      rgba(36, 26, 23, 0);
+  }
+
+  45% {
+    box-shadow:
+      25px
+      0
+      35px
+      rgba(36, 26, 23, 0.18);
+  }
+
+  100% {
+    transform:
+      rotateY(180deg);
+
+    box-shadow:
+      0 0 0
+      rgba(36, 26, 23, 0);
+  }
+}
+
+
+/* =========================================
+   MOVABLE STICKERS
+========================================= */
+
+.journal-sticker {
+  position: absolute;
+
+  z-index: 50;
+
+  cursor: grab;
+
+  user-select: none;
+
+  touch-action: none;
+
+  white-space: nowrap;
+
+  transition:
+    box-shadow 0.2s ease,
+    scale 0.2s ease;
+}
+
+
+.journal-sticker:active {
+  cursor: grabbing;
+
+  scale: 1.08;
+
+  z-index: 100;
+}
+
+
+/* =========================================
+   STICKER TYPES
+========================================= */
+
+.sticker-note {
+  padding:
+    10px
+    13px;
+
+  background:
+    #F7C9D9;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1rem;
+
+  color:
+    var(--wine);
+
+  box-shadow:
+    0 8px 15px
+    rgba(36, 26, 23, 0.12);
+}
+
+
+.sticker-pink {
+  padding:
+    8px
+    11px;
+
+  background:
+    var(--pink);
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.42rem;
+
+  letter-spacing:
+    0.08em;
+
+  text-transform:
+    uppercase;
+
+  color:
+    var(--cream);
+
+  box-shadow:
+    0 8px 14px
+    rgba(36, 26, 23, 0.12);
+}
+
+
+.sticker-spark {
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    2.2rem;
+
+  color:
+    var(--wine);
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.journal-navigation {
+  width:
+    min(550px, 75vw);
+
+  margin:
+    28px
+    auto
+    0;
+
+  display: flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.page-arrow {
+  width: 42px;
+  height: 42px;
+
+  border:
+    1px solid
+    rgba(36, 26, 23, 0.3);
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 248, 242, 0.75);
+
+  color:
+    var(--wine);
+
+  font-family:
+    "Playball",
+    serif;
+
+  font-size:
+    1.2rem;
+
+  cursor:
+    pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.page-arrow:hover:not(:disabled) {
+  background:
+    var(--wine);
+
+  color:
+    var(--cream);
+
+  transform:
+    scale(1.08);
+}
+
+
+.page-arrow:disabled {
+  opacity: 0.25;
+
+  cursor:
+    not-allowed;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.page-progress {
+  display: flex;
+
+  align-items:
+    center;
+
+  gap: 12px;
+}
+
+
+.progress-current,
+.progress-total {
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.48rem;
+
+  letter-spacing:
+    0.12em;
+}
+
+
+.progress-current {
+  color:
+    var(--wine);
+}
+
+
+.progress-total {
+  color:
+    rgba(36, 26, 23, 0.35);
+}
+
+
+.progress-lines {
+  display: flex;
+
+  gap: 5px;
+}
+
+
+.progress-lines span {
+  width: 22px;
+  height: 2px;
+
+  background:
+    rgba(36, 26, 23, 0.15);
+
+  transition:
+    width 0.35s ease,
+    background 0.35s ease;
+}
+
+
+.progress-lines span.active {
+  width: 35px;
+
+  background:
+    var(--pink);
+}
+
+
+/* =========================================
+   DRAG HINT
+========================================= */
+
+.drag-hint {
+  margin:
+    13px
+    0
+    0;
+
+  text-align:
+    center;
+
+  font-family:
+    "Caveat Brush",
+    cursive;
+
+  font-size:
+    1rem;
+
+  color:
+    rgba(36, 26, 23, 0.55);
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.skills-bottom {
+  width: 100%;
+
+  padding:
+    18px
+    0
+    30px;
+
+  display: flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  gap: 18px;
+
+  font-family:
+    "DM Mono",
+    monospace;
+
+  font-size:
+    0.47rem;
+
+  letter-spacing:
+    0.25em;
+
+  color:
+    rgba(36, 26, 23, 0.55);
+}
+
+
+.skills-bottom i {
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    0.8rem;
+
+  color:
+    var(--pink);
+
+  font-style:
+    normal;
+}
+
+
+/* =========================================
+   FLOATING DOODLE ANIMATION
+========================================= */
+
+@keyframes doodleFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(0deg);
+  }
+
+  50% {
+    transform:
+      translateY(-12px)
+      rotate(8deg);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .skills-page {
+    background:
+      linear-gradient(
+        180deg,
+        var(--pink) 0%,
+        var(--pink) 28%,
+        var(--cream) 28%,
+        var(--cream) 100%
+      );
+  }
+
+
+  .skills-intro {
+    padding-top: 90px;
+  }
+
+
+  .hobby-book {
+    width: 90vw;
+
+    height: 500px;
+  }
+
+
+  .left-page-inner {
+    padding:
+      40px
+      42px
+      30px;
+  }
+
+
+  .right-page-inner {
+    padding:
+      23px
+      28px;
+  }
+
+
+  .hobby-photo-wrap {
+    left: 28px;
+
+    height: 210px;
+  }
+
+
+  .hobby-content {
+    right: 25px;
+
+    width: 43%;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .skills-page {
+    background:
+      linear-gradient(
+        180deg,
+        var(--pink) 0%,
+        var(--pink) 27%,
+        var(--cream) 27%,
+        var(--cream) 100%
+      );
+  }
+
+
+  /* -----------------------------------------
+     BACKGROUND
+  ----------------------------------------- */
+
+  .skills-bg-word {
+    top: 95px;
+
+    right: -25px;
+
+    font-size: 6.5rem;
+  }
+
+
+  .skills-doodle {
+    z-index: 1;
+  }
+
+
+  .doodle-one {
+    left: 4%;
+
+    top: 11%;
+
+    font-size: 1.2rem;
+  }
+
+
+  .doodle-two {
+    right: 5%;
+
+    top: 17%;
+
+    font-size: 1.4rem;
+  }
+
+
+  .doodle-three {
+    left: 3%;
+
+    top: 30%;
+
+    font-size: 1rem;
+  }
+
+
+  .doodle-four {
+    right: 3%;
+
+    top: 33%;
+
+    font-size: 1.2rem;
+  }
+
+
+  /* -----------------------------------------
+     INTRO
+  ----------------------------------------- */
+
+  .skills-intro {
+    width: 90vw;
+
+    padding:
+      80px
+      0
+      20px;
+  }
+
+
+  .skills-eyebrow {
+    font-size:
+      0.44rem;
+
+    letter-spacing:
+      0.19em;
+  }
+
+
+  .skills-intro h1 {
+    font-size:
+      2.7rem;
+
+    line-height:
+      0.94;
+  }
+
+
+  .skills-intro-text {
+    margin-top:
+      1rem;
+
+    font-size:
+      0.7rem;
+  }
+
+
+  /* -----------------------------------------
+     JOURNAL
+  ----------------------------------------- */
+
+  .journal-area {
+    width:
+      94vw;
+
+    padding-top:
+      10px;
+  }
+
+
+  .hobby-book {
+    width:
+      90vw;
+
+    height:
+      500px;
+
+    display:
+      block;
+
+    perspective:
+      1300px;
+  }
+
+
+  /* -----------------------------------------
+     MOBILE: ONLY RIGHT PAGE
+  ----------------------------------------- */
+
+  .hobby-book:not(.book-is-flipping) .journal-left {
+    display: none;
+  }
+
+
+  .hobby-book:not(.book-is-flipping) .journal-right {
+    width: 100%;
+
+    border-radius: 5px;
+
+    box-shadow:
+      0 15px 30px
+      rgba(36, 26, 23, 0.15);
+  }
+
+
+  /* -----------------------------------------
+     MOBILE FLIP
+  ----------------------------------------- */
+
+  .static-left,
+  .static-right,
+  .under-left,
+  .under-right {
+    width: 100%;
+  }
+
+
+  .static-left {
+    display: none;
+  }
+
+
+  .static-right {
+    left: 0;
+
+    width: 100%;
+  }
+
+
+  .under-right {
+    left: 0;
+
+    width: 100%;
+  }
+
+
+  .under-left {
+    left: 0;
+
+    width: 100%;
+  }
+
+
+  .turning-sheet {
+    width: 100%;
+  }
+
+
+  .turning-next {
+    left: 0;
+
+    transform-origin:
+      left center;
+  }
+
+
+  .turning-previous {
+    left: 0;
+
+    transform-origin:
+      right center;
+  }
+
+
+  .turning-next .turn-front,
+  .turning-next .turn-back,
+  .turning-previous .turn-front,
+  .turning-previous .turn-back {
+    width: 100%;
+  }
+
+
+  /* -----------------------------------------
+     RIGHT PAGE
+  ----------------------------------------- */
+
+  .right-page-inner {
+    padding:
+      24px
+      21px
+      20px;
+  }
+
+
+  .page-top {
+    font-size:
+      0.4rem;
+  }
+
+
+  /* -----------------------------------------
+     PHOTO
+  ----------------------------------------- */
+
+  .hobby-photo-wrap {
+    position: absolute;
+
+    left: 50%;
+
+    top: 65px;
+
+    width:
+      73%;
+
+    height:
+      200px;
+
+    transform:
+      translateX(-50%)
+      rotate(-2deg);
+  }
+
+
+  .photo-caption {
+    font-size:
+      1rem;
+
+    bottom:
+      -23px;
+  }
+
+
+  /* -----------------------------------------
+     CONTENT
+  ----------------------------------------- */
+
+  .hobby-content {
+    top:
+      278px;
+
+    left:
+      21px;
+
+    right:
+      21px;
+
+    width:
+      auto;
+
+    padding:
+      0;
+
+    text-align:
+      center;
+  }
+
+
+  .hobby-subtitle {
+    font-size:
+      0.39rem;
+  }
+
+
+  .hobby-content h2 {
+    font-size:
+      3rem;
+
+    line-height:
+      0.9;
+  }
+
+
+  .hobby-description {
+    max-width:
+      360px;
+
+    margin:
+      0.8rem
+      auto
+      0;
+
+    font-size:
+      0.66rem;
+
+    line-height:
+      1.55;
+  }
+
+
+  .hobby-note {
+    justify-content:
+      center;
+
+    margin-top:
+      0.75rem;
+
+    font-size:
+      0.9rem;
+  }
+
+
+  .page-corner {
+    right:
+      14px;
+
+    bottom:
+      12px;
+  }
+
+
+  /* -----------------------------------------
+     STICKERS
+  ----------------------------------------- */
+
+  .journal-sticker {
+    z-index:
+      60;
+  }
+
+
+  .sticker-note {
+    padding:
+      7px
+      9px;
+
+    font-size:
+      0.72rem;
+  }
+
+
+  .sticker-pink {
+    padding:
+      6px
+      8px;
+
+    font-size:
+      0.32rem;
+  }
+
+
+  .sticker-spark {
+    font-size:
+      1.5rem;
+  }
+
+
+  /* -----------------------------------------
+     NAVIGATION
+  ----------------------------------------- */
+
+  .journal-navigation {
+    width:
+      82vw;
+
+    margin-top:
+      20px;
+  }
+
+
+  .page-arrow {
+    width:
+      36px;
+
+    height:
+      36px;
+
+    font-size:
+      1rem;
+  }
+
+
+  .page-progress {
+    gap:
+      8px;
+  }
+
+
+  .progress-lines {
+    gap:
+      3px;
+  }
+
+
+  .progress-lines span {
+    width:
+      12px;
+  }
+
+
+  .progress-lines span.active {
+    width:
+      20px;
+  }
+
+
+  .progress-current,
+  .progress-total {
+    font-size:
+      0.38rem;
+  }
+
+
+  .drag-hint {
+    margin-top:
+      8px;
+
+    font-size:
+      0.88rem;
+  }
+
+
+  /* -----------------------------------------
+     BOTTOM
+  ----------------------------------------- */
+
+  .skills-bottom {
+    gap:
+      9px;
+
+    padding:
+      18px
+      0
+      28px;
+
+    font-size:
+      0.37rem;
+
+    letter-spacing:
+      0.14em;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 390px) {
+
+  .skills-intro h1 {
+    font-size:
+      2.4rem;
+  }
+
+
+  .skills-intro-text {
+    font-size:
+      0.65rem;
+  }
+
+
+  .hobby-book {
+    height:
+      470px;
+  }
+
+
+  .hobby-photo-wrap {
+    height:
+      180px;
+
+    width:
+      72%;
+  }
+
+
+  .hobby-content {
+    top:
+      250px;
+  }
+
+
+  .hobby-content h2 {
+    font-size:
+      2.7rem;
+  }
+
+
+  .hobby-description {
+    font-size:
+      0.61rem;
+  }
+
+
+  .hobby-note {
+    font-size:
+      0.8rem;
+  }
+
+
+  .journal-navigation {
+    width:
+      88vw;
+  }
+
+
+  .skills-bottom {
+    font-size:
+      0.33rem;
+  }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .skills-doodle,
+  .hobby-photo-wrap,
+  .turning-sheet {
+    animation:
+      none !important;
+
+    transition:
+      none !important;
+  }
+
+}
+
+/* =========================================
+   YOUR YELLOW THEME OVERRIDES
+   Theme-only: layout and interactions preserved
+========================================= */
+
+.skills-page {
+  background: var(--yellow);
+  color: var(--dark, #241A17);
+}
+
+.skills-bg-word {
+  color: rgba(36, 26, 23, 0.07);
+}
+
+.skills-doodle {
+  color: rgba(200, 47, 106, 0.62);
+}
+
+.skills-intro {
+  background: var(--yellow);
+  border-top-color: rgba(36, 26, 23, 0.12);
+  border-bottom-color: rgba(36, 26, 23, 0.12);
+}
+
+.skills-intro::before,
+.skills-intro::after {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--cream) 0,
+    var(--cream) 2px,
+    transparent 2px,
+    transparent 12px
+  );
+}
+
+.skills-intro h1,
+.skills-intro h1 em {
+  color: var(--dark, #241A17);
+}
+
+.skills-intro h1 em {
+  color: var(--pink);
+}
+
+.skills-intro-text,
+.skills-eyebrow {
+  color: rgba(36, 26, 23, 0.72);
+}
+
+.hobby-book {
+  filter: drop-shadow(
+    0 25px 35px rgba(36, 26, 23, 0.16)
+  );
+}
+
+.journal-left,
+.journal-right {
+  color: var(--dark, #241A17);
+}
+
+.journal-left {
+  background:
+    linear-gradient(
+      90deg,
+      #FFF3C4,
+      var(--paper)
+    );
+}
+
+.journal-right {
+  background: var(--paper);
+}
+
+.page-pink {
+  background: #FFF9E8;
+}
+
+.page-yellow {
+  background: #FFF4B8;
+}
+
+.page-cream {
+  background: #FFFDF5;
+}
+
+.page-green {
+  background: #F3E58A;
+}
+
+.page-rose {
+  background: #FBE0EA;
+}
+
+.photo-tape {
+  background: rgba(200, 47, 106, 0.65);
+}
+
+.photo-caption,
+.hobby-content h2,
+.left-page-inner h2 em {
+  color: var(--pink);
+}
+
+.left-page-inner h2,
+.hobby-content h2 {
+  color: var(--dark, #241A17);
+}
+
+.sticker-note {
+  background: #F7C9D9;
+  color: #241A17;
+}
+
+.sticker-pink {
+  background: var(--pink);
+  color: var(--cream);
+}
+
+.sticker-spark {
+  color: var(--pink);
+}
+
+.page-arrow:hover:not(:disabled) {
+  background: var(--pink);
+  color: var(--cream);
+}
+
+.progress-current {
+  color: var(--dark, #241A17);
+}
+
+.progress-lines span.active {
+  background: var(--pink);
+}
+
+.skills-bottom i {
+  color: var(--pink);
+}
+
+@media (max-width: 900px) {
+  .skills-page {
+    background:
+      linear-gradient(
+        180deg,
+        var(--yellow) 0%,
+        var(--yellow) 28%,
+        var(--cream) 28%,
+        var(--cream) 100%
+      );
+  }
+}
+
+@media (max-width: 700px) {
+  .skills-page {
+    background:
+      linear-gradient(
+        180deg,
+        var(--yellow) 0%,
+        var(--yellow) 27%,
+        var(--cream) 27%,
+        var(--cream) 100%
+      );
+  }
+}
