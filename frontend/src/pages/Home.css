@@ -869,33 +869,15 @@ button {
 ================================================== */
 
 .home-intro {
+  top: 60%;
 
-  position:
-    absolute;
+  width: 100%;
 
-  left:
-    50%;
+  justify-content: center;
 
-  top:
-    67%;
+  gap: 9px;
 
-  transform:
-    translateX(-50%);
-
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  gap:
-    14px;
-
-  z-index:
-    35;
-
-  color:
-    var(--brown);
+  padding: 0 15px;
 }
 
 .home-intro p {
